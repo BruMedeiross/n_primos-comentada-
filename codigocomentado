@@ -1,4 +1,4 @@
-def ePrimo(n):
+def ePrimo(n): #função apenas atesta se o número é primo
     fator = 2
     while n% fator !=  0 and fator < n/2:
         fator =  fator+1
