@@ -1,0 +1,16 @@
+def ePrimo(n):
+    fator = 2
+    while n% fator !=  0 and fator < n/2:
+        fator =  fator+1
+    if n% fator ==  0:
+        return False
+    else:
+        return True
+    
+def n_primos(n): #exemplo (n = 4)    
+    cont = 1 #contador de quantos números primos há #começa com 1
+    while (n > 2): # enquanto o (n = 4) for maior que 2
+        if (ePrimo(n)): #teste 1: 4 não é primo #teste 2: 3 é primo 
+            cont = cont+ 1 #teste 2: como 3 é primo contador recebe +1 passa a valer 2  
+        n = n- 1 #teste 1: como 4 não é primo, (n-1) n passa a valer 3
+    return contador #teste 2 sai do while pois (n) passa a valer 2 #contador retorna resposta - há 2 números primos na escala ate 4 
